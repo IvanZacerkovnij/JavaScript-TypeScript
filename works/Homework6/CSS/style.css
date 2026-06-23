@@ -1,0 +1,44 @@
+.container {
+    background: antiquewhite;
+    padding: 10px;
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.container2 {
+    padding: 10px;
+    width: 500px;
+    margin: 0 auto;
+    background-color: cornflowerblue;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.menu {
+    width: 100px;
+    text-align: center;
+}
+
+.menu p {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu p:hover {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.textContainer {
+    background-color: white;
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+}
