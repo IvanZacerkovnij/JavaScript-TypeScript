@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework8</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <form id="date">
+        <label for="month"> month: </label>
+        <input id="month" type="number" min="1" max="12">
+        <label for="year"> year: </label>
+        <input id="year" type="number" min="1970" max="2100">
+
+        <button id="btn" type="submit">Generate</button>
+    </form>
+
+    <br>
+
+    <div id="schedule" class="hidden">
+        <h2 id="textDate"></h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                    <th>Sun</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../Scripts/homework8.js"></script>
+</body>
+</html>
