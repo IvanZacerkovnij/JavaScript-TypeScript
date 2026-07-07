@@ -30,11 +30,11 @@ $(document).ready(function () {
 
         $("#textDate").text(`${monthNames[month - 1]} ${year}`);
 
-        while (day < daysInMonth) {
+        while (day <= daysInMonth) {
             $("#tableBody").append("<tr>");
             for(let i = 0; i < 7; i++) {
                 if(day === 1 && i < startDay) {
-                    $("#tableBody").append("<td></td>>");
+                    $("#tableBody").append("<td></td>");
                 } else if (day > daysInMonth){
                     $("#tableBody").append("<td></td>");
                 } else {
