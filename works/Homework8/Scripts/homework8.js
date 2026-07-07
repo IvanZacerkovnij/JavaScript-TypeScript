@@ -21,7 +21,7 @@ $(document).ready(function () {
 
         $("#tableBody").html("");
 
-        let daysInMonth = new Date(year, month - 1, 0).getDate();
+        let daysInMonth = new Date(year, month, 0).getDate();
 
         let firstDay = new Date(year, month - 1, 1).getDay();
         let startDay = (firstDay + 6) % 7;
@@ -42,7 +42,7 @@ $(document).ready(function () {
                     day++;
                 }
             }
-            $("#tableBody").append("<tr>");
+            $("#tableBody").append("</tr>");
         }
 
     }
