@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>homework9</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+  <body>
+    <form id="registerForm">
+      <label>
+        Ім'я:
+        <input type="text" id="firstName" name="firstName">
+      </label>
+      <div class="error" data-error="firstName"></div>
+
+      <label>
+        Прізвище:
+        <input type="text" id="lastName" name="lastName">
+      </label>
+      <div class="error" data-error="lastName"></div>
+
+      <label>
+        Email:
+        <input type="email" id="email" name="email">
+      </label>
+      <div class="error" data-error="email"></div>
+
+      <label>
+        Пароль:
+        <input type="password" id="password" name="password">
+      </label>
+      <div class="error" data-error="password"></div>
+
+      <label>
+        Дата народження:
+        <input type="date" id="birthDate" name="birthDate">
+      </label>
+      <div class="error" data-error="birthDate"></div>
+
+      <label>
+        Телефон:
+        <input type="text" id="phone" name="phone" placeholder="+380XXXXXXXXX">
+      </label>
+      <div class="error" data-error="phone"></div>
+
+      <label>
+        Країна:
+        <select id="country" name="country">
+          <option value="">Оберіть країну</option>
+          <option value="Україна">Україна</option>
+          <option value="Німеччина">Німеччина</option>
+          <option value="Польща">Польща</option>
+          <option value="Франція">Франція</option>
+        </select>
+      </label>
+
+      <div class="radio-group">
+        <p>Стать:</p>
+
+        <label>
+          <input type="radio" name="gender" value="Чоловік">
+          Чоловік
+        </label>
+
+        <label>
+          <input type="radio" name="gender" value="Жінка">
+          Жінка
+        </label>
+      </div>
+
+      <div class="checkbox-group">
+        <p>Навички:</p>
+
+        <label>
+          <input type="checkbox" name="skills" value="HTML">
+          HTML
+        </label>
+
+        <label>
+          <input type="checkbox" name="skills" value="CSS">
+          CSS
+        </label>
+
+        <label>
+          <input type="checkbox" name="skills" value="JavaScript">
+          JavaScript
+        </label>
+
+        <label>
+          <input type="checkbox" name="skills" value="jQuery">
+          jQuery
+        </label>
+      </div>
+      <div class="error" data-error="skills"></div>
+
+      <label>
+        Коментар:
+        <textarea id="comment" name="comment"></textarea>
+      </label>
+      <div class="error" data-error="comment"></div>
+
+      <label>
+        <input type="checkbox" id="agree" name="agree" style="width: auto;">
+        Я погоджуюсь з умовами
+      </label>
+      <div class="error" data-error="agree"></div>
+
+      <button type="submit">Відправити</button>
+    </form>
+
+    <script src="../Scripts/homework9.js"></script>
+  </body>
+</html>

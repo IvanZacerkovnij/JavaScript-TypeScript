@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background: blanchedalmond;
+}
+
+form {
+    margin: 0 auto;
+    width: 400px;
+    background: antiquewhite;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 2px 2px 8px #000;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.checkbox-group label,
+.radio-group label {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+}
