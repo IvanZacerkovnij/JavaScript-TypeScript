@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Реєстраційна форма</title>
+
+  <link rel="stylesheet" href="../CSS/style.css" />
+
+  <script defer src="../Scripts/homework10.js"></script>
+</head>
+
+<body>
+
+<form id="formcard" class="form-card">
+
+  <div class="settings">
+
+    <div class="field">
+      <label for="language" data-text="languageLabel">
+        Мова:
+      </label>
+
+      <select id="language">
+        <option value="uk">Українська</option>
+        <option value="en">English</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="theme" data-text="themeLabel">
+        Тема:
+      </label>
+
+      <select id="theme">
+        <option value="dark" data-text="darkTheme">
+          Темна
+        </option>
+
+        <option value="light" data-text="lightTheme">
+          Світла
+        </option>
+      </select>
+    </div>
+  </div>
+  <h1 data-text="title">
+    Реєстраційна форма
+  </h1>
+  <div class="grid">
+    <div class="field">
+      <label data-text="nameLabel">
+        Ім'я
+      </label>
+      <input
+              type="text"
+              name="name"
+              placeholder="Введіть ім'я"
+              data-placeholder="namePlaceholder"/>
+    </div>
+    <div class="field">
+      <label data-text="surnameLabel">
+        Прізвище
+      </label>
+      <input
+              type="text"
+              name="surname"
+              placeholder="Введіть прізвище"
+              data-placeholder="surnamePlaceholder"/>
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <input
+              type="email"
+              name="email"
+              placeholder="example@gmail.com"/>
+    </div>
+    <div class="field">
+      <label data-text="passwordLabel">
+        Пароль
+      </label>
+      <input
+              type="password"
+              name="pwd"
+              placeholder="********"/>
+    </div>
+    <div class="field">
+      <label data-text="birthDateLabel">
+        Дата народження
+      </label>
+      <input
+              type="date"
+              name="date"/>
+    </div>
+    <div class="field">
+      <label data-text="phoneLabel">
+        Телефон
+      </label>
+      <input
+              type="tel"
+              name="phone"
+              placeholder="+380..."/>
+    </div>
+    <div class="field full">
+      <label data-text="countryLabel">
+        Країна
+      </label>
+      <select name="country">
+        <option value="uk" data-text="ukraine">
+          Україна
+        </option>
+        <option value="pl" data-text="poland">
+          Польща
+        </option>
+        <option value="de" data-text="germany">
+          Німеччина
+        </option>
+        <option value="usa" data-text="usa">
+          США
+        </option>
+      </select>
+    </div>
+    <div class="field full">
+      <label data-text="genderLabel">
+        Стать
+      </label>
+      <div class="radio-group">
+        <label>
+          <input
+                  type="radio"
+                  checked
+                  name="gender"
+                  value="m"/>
+          <span data-text="male">
+            Чоловік
+          </span>
+        </label>
+        <label>
+          <input
+                  type="radio"
+                  name="gender"
+                  value="w"/>
+          <span data-text="female">
+            Жінка
+          </span>
+        </label>
+      </div>
+    </div>
+    <div class="field full">
+      <label data-text="skillsLabel">
+        Ваші навички
+      </label>
+      <div class="checkbox-group">
+        <label>
+          <input type="checkbox" checked />
+          HTML
+        </label>
+        <label>
+          <input type="checkbox" />
+          CSS
+        </label>
+        <label>
+          <input type="checkbox" />
+          JavaScript
+        </label>
+        <label>
+          <input type="checkbox" />
+          Python
+        </label>
+      </div>
+    </div>
+    <div class="field full">
+      <label data-text="experienceLabel">
+        Рівень досвіду
+      </label>
+      <input
+              type="range"
+              min="0"
+              max="100"
+              value="50"
+              id="range"
+              name="exp"/>
+      <div class="range-value" id="valueText">
+        50%
+      </div>
+    </div>
+    <div class="field full">
+      <label data-text="fileLabel">
+        Завантажити файл
+      </label>
+      <input type="file" />
+    </div>
+    <div class="field full">
+      <label data-text="commentLabel">
+        Коментар
+      </label>
+      <textarea placeholder="Напишіть щось..." data-placeholder="commentPlaceholder"></textarea>
+    </div>
+    <div class="field full">
+      <label>
+        <input type="checkbox" name="agree"/>
+        <span data-text="agreeLabel">
+          Я погоджуюсь з умовами
+        </span>
+      </label>
+    </div>
+  </div>
+  <div class="buttons">
+    <button
+            type="submit"
+            class="submit-btn"
+            data-text="submitButton">
+      Відправити
+    </button>
+
+    <button
+            type="reset"
+            class="reset-btn"
+            data-text="resetButton">
+      Очистити
+    </button>
+  </div>
+</form>
+</body>
+</html>
