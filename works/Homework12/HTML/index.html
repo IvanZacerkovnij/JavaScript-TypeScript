@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+<form id="weatherForm">
+    <h1>Погода</h1>
+
+    <label>
+        Країна:
+        <select id="country">
+            <option value="">Оберіть країну</option>
+        </select>
+    </label>
+
+    <label>
+        Область:
+        <select id="state" disabled>
+            <option value="">Спочатку оберіть країну</option>
+        </select>
+    </label>
+
+    <label>
+        Місто:
+        <select id="city" disabled>
+            <option value="">Спочатку оберіть область</option>
+        </select>
+    </label>
+
+    <button type="submit">Показати погоду</button>
+
+    <div id="weatherResult" class="hidden"></div>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="../Scripts/homework12.js"></script>
+
+</body>
+</html>
